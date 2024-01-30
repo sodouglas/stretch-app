@@ -1,16 +1,17 @@
-"use client";
-import { Button } from "@mantine/core";
-import { useState } from "react";
+'use client';
+
+import React, { useState } from 'react';
+import { Button } from '@mantine/core';
 
 const muscleGroups = [
-  "Neck",
-  "Shoulders",
-  "Chest",
-  "Trunk",
-  "Lower Back",
-  "Hips",
-  "Legs",
-  "Ankles",
+  'Neck',
+  'Shoulders',
+  'Chest',
+  'Trunk',
+  'Lower Back',
+  'Hips',
+  'Legs',
+  'Ankles',
 ];
 
 export const MuscleGroups = () => {
@@ -21,7 +22,7 @@ export const MuscleGroups = () => {
       {muscleGroups.map((muscleGroup) => (
         <Button
           key={muscleGroup}
-          variant={activeLink === muscleGroup ? "filled" : "light"}
+          variant={activeLink === muscleGroup ? 'filled' : 'light'}
           onClick={() => setActiveLink(muscleGroup)}
           h="40"
           mt="sm"

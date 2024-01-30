@@ -1,7 +1,9 @@
-"use client";
-import { AppShell, Burger, Group } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
-import { MuscleGroups } from "./MuscleGroups";
+'use client';
+
+import React from 'react';
+import { AppShell, Burger, Group } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import { MuscleGroups } from './MuscleGroups';
 
 export const BasicAppShell = ({ children }: { children: React.ReactNode }) => {
   const [opened, { toggle }] = useDisclosure();
@@ -9,7 +11,7 @@ export const BasicAppShell = ({ children }: { children: React.ReactNode }) => {
   return (
     <AppShell
       header={{ height: 60 }}
-      navbar={{ width: 300, breakpoint: "sm", collapsed: { mobile: !opened } }}
+      navbar={{ width: 300, breakpoint: 'sm', collapsed: { mobile: !opened } }}
       padding="md"
     >
       <AppShell.Header>
